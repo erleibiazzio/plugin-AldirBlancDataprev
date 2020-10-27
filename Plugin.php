@@ -44,6 +44,7 @@ class Plugin extends \AldirBlanc\PluginValidador
                 $this->part('aldirblanc/csv-button', ['inciso' => $inciso, 'opportunity' => $opportunity]);
             }
         });
+        
 
         // uploads de CSVs 
         $app->hook('template(opportunity.<<single|edit>>.sidebar-right):end', function () {
